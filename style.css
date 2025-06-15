@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: url('/images/maurits-bausenhart-svIx14OUl1M-unsplash.jpg') no-repeat center center fixed;
+  background: url('./images/maurits-bausenhart-svIx14OUl1M-unsplash.jpg') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
