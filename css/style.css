@@ -1,0 +1,162 @@
+/* Base styles */
+body {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: url('/images/maurits-bausenhart-svIx14OUl1M-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.main {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Translucent content box */
+.content {
+  background-color: rgba(18, 18, 18, 0.7); /* translucent black */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+
+/* Headings */
+h1, h2 {
+  color: #3dbb3d; /* green accent */
+  text-align: center;
+  margin-top: 0;
+  font-family: 'lucida calligraphy';
+}
+h1{
+  font-size: 4rem;
+}
+/* Form layout */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+select,
+button {
+  padding: 10px;
+  border: 1px solid #3dbb3d;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 200px;
+  box-sizing: border-box;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+select {
+  background-color: #1f1f1f;
+}
+
+button {
+  background-color: #3dbb3d;
+  color: #000;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #33aa33;
+}
+
+/* Guest list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #1f1f1f;
+  border: 1px solid #444;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Guest type badges */
+.badge {
+  padding: 3px 6px;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.badge.friend { background-color: #3dbb3d; }
+.badge.family { background-color: blue; }
+.badge.colleague { background-color: orange; }
+
+.timestamp {
+  font-size: 0.8em;
+  color: #aaa;
+  white-space: nowrap;
+}
+
+/* Action buttons */
+.rsvp-btn,
+.remove-btn,
+.edit-btn {
+  background-color: #3dbb3d;
+  color: #000;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 1;
+  min-width: 80px;
+}
+
+.rsvp-btn:hover,
+.remove-btn:hover,
+.edit-btn:hover {
+  background-color: #33aa33;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input[type="text"],
+  select,
+  button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rsvp-btn,
+  .remove-btn,
+  .edit-btn {
+    width: 100%;
+    min-width: auto;
+  }
+}
