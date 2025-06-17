@@ -56,3 +56,8 @@ Follow these simple steps to use the guest list manager:
 
 Created by **Brian Cheruiyot**
 
+
+### MIT License
+
+### Copyright (c) 2025 Brian Cheruiyot
+
